@@ -25,8 +25,8 @@ buildscript
                     }
         }
 
-sourceCompatibility = 1.8                        //add according to your project SDK
-targetCompatibility = 1.8                        //add according to your project SDK
+sourceCompatibility = 1.8                       //add according to your project SDK
+targetCompatibility = 1.8                       //add according to your project SDK
 
 ext
         {
@@ -67,10 +67,10 @@ dependencies
         }
 
 test {
-    filter {
-
-        includeTestsMatching "*.CucumberRunner"               //Set to your Rest Runner BDD directory/Package
-    }
+//    filter {
+//
+////        includeTestsMatching "*.CucumberRunner"               //Set to your Rest Runner BDD directory/Package
+//    }
     systemProperties System.getProperties()
 }
 

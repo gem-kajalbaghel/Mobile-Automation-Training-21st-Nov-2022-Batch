@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -31,7 +32,6 @@ public class DemoApp extends PageObject{
 
         System.out.println("Application Launched successfully");
     }
-
     @When("^Check for Application$")
     public void appLaunchedOrNot(){
         System.out.println("Status Checked and Applicaton got Launched!!");

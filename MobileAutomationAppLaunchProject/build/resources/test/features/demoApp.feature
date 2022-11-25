@@ -1,4 +1,4 @@
-@BDDtests
+@step
 Feature: Demo Application
 
   Scenario: Launching Demo Application
