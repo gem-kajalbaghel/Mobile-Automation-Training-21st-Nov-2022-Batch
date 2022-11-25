@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -12,8 +13,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DemoApp {
-
+public class DemoApp extends PageObject {
 
 @Managed(driver = "appium")
     WebDriver driver;
@@ -21,7 +21,6 @@ public class DemoApp {
 
 @Given("^Launch the application$")
 public void app() throws MalformedURLException, InterruptedException {
-
     Thread.sleep(2000);
     DesiredCapabilities cap = new DesiredCapabilities();
 
@@ -44,6 +43,7 @@ public void app() throws MalformedURLException, InterruptedException {
 public void check()
 {
     System.out.println("Application is launched");
+
 }
 
 }
