@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Search using Appium Inspector" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-25T08:34:01" hostname="GEMGN-200030" time="46.082">
+<testsuite name="Search using Appium Inspector" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-28T09:36:37" hostname="GEMGN-200030" time="35.692">
   <properties/>
-  <testcase name="check launch of demo application" classname="Search using Appium Inspector" time="46.082"/>
+  <testcase name="check launch of demo application" classname="Search using Appium Inspector" time="35.692"/>
   <system-out><![CDATA[Launching calculator app
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hi.panchal/IdeaProjects/mobile_automation/src/test/resources/features/feature.feature
