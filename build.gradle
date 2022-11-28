@@ -56,15 +56,13 @@ dependencies
                     "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
                     'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.0'
 
-
 //            implementation 'junit:junit:4.13.2'
 //            testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
 //            testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 //            testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
             implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.6.0'
             implementation group: 'io.appium', name: 'java-client', version: '8.2.0'
-
-        }
+}
 
 test {
     filter {
@@ -73,7 +71,6 @@ test {
     }
     systemProperties System.getProperties()
 }
-
 
 gradle.startParameter.continueOnFailure = true
 test.finalizedBy(aggregate)

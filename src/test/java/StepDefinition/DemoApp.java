@@ -36,14 +36,11 @@ public void app() throws MalformedURLException, InterruptedException {
 
     System.out.println("Launched application");
 
-    Thread.sleep(6000);
-
 }
 @When("^Check the application$")
 public void check()
 {
     System.out.println("Application is launched");
-
 }
 
 }
