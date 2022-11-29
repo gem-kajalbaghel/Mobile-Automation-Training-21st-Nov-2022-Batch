@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="set the initial setup" skipped="0" tests="1" time="22.15" timestamp="2022-11-29 10:52:48"><testcase name="script on Swipe"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+UiPage.stepperClass.swipeFunc(stepperClass.java:93)&#13;
+StepDemo.demoSteps.swipping(demoSteps.java:36)&#13;
+StepDefinations.steps.swipe(steps.java:42)&#13;
+✽.check swipe functionality(file:///C:/Users/91978/IdeaProjects/MobileAssign_4/src/main/resources/Features/demo.feature:26)&#13;
+</system-err></testcase></testsuite>

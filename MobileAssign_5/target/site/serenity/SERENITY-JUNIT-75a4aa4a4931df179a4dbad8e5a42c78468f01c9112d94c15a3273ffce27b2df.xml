@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="set the initial setup" skipped="0" tests="1" time="22.13" timestamp="2022-11-29 10:33:44"><testcase name="script on Scroll"><error type="java.lang.ExceptionInInitializerError"/><system-err>null&#13;
+UiPage.stepperClass.scrollFunc(stepperClass.java:88)&#13;
+StepDemo.demoSteps.scrolling(demoSteps.java:32)&#13;
+StepDefinations.steps.scroll(steps.java:38)&#13;
+✽.check scrolling functionality(file:///C:/Users/91978/IdeaProjects/MobileAssign_4/src/main/resources/Features/demo.feature:20)&#13;
+</system-err></testcase></testsuite>
