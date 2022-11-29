@@ -5,7 +5,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/Features",glue = "StepDefinition",tags = "@test12345"
+        features = "src/test/resources/Features",glue = "StepDefinition",tags = "@test1234"
 )
 
 public class CucumberRunner {
