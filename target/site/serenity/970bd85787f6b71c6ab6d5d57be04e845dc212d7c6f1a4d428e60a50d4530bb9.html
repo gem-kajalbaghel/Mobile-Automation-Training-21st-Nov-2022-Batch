@@ -143,7 +143,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-11-2022 15:06</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-11-2022 15:41</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -180,9 +180,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="error-color">
                                     check launch of demo application
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -227,8 +227,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a
+                        <td class="test-ERROR"><a href="#0">1</a></td>
+                            <td class="test-ERROR"><a
                                         href="#0">5</a>
                             </td>
                     </tr>
@@ -253,13 +253,13 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="bi bi-plus-square imgstepSection0 success-icon"
+                                <i class="bi bi-plus-square imgstepSection0 error-icon"
                                    style="margin-left: 20px; float:left; padding-right:5px"></i>
                             </a>
                     </td>
@@ -277,8 +277,8 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">35s 124ms</span></td>
+                    <td width="130"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">39s 591ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -303,14 +303,14 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">24s 337ms</span></td>
+                    <td width="100"><span class="nested-group-step">37s 944ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
 
                     <td width="70" class="step-icon">
                         <a name="0-1"></a>
                             <span style="margin-left: 40px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
                                 </span>
                     </td>
 
@@ -324,17 +324,55 @@
                         </div>
                     </td>
 
-                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">10s 649ms</span></td>
+                    <td width="130"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">1s 454ms</span></td>
                 </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.<br>For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br>Build info: version: &#39;4.6.0&#39;, revision: &#39;79f1c02ae20&#39;<br>System info: os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_352&#39;<br>Driver info: io.appium.java_client.android.AndroidDriver<br>Command: [7e3c7a0a-f6ee-4ce3-8677-13379588697a, findElement {using=id, value=com.bak.mnr.calculatrice:id/btn5}]<br>Capabilities {appium:app: C:\Users\hi.panchal\Desktop..., appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: C:\Users\hi.panchal\Desktop..., deviceName: Pixel 6 Pro API 31, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2680, left: 0, top: 136, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}<br>Session ID: 7e3c7a0a-f6ee-4ce3-8677-13379588697a<br>For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br>Build info: version: &#39;4.6.0&#39;, revision: &#39;79f1c02ae20&#39;<br>System info: os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_352&#39;<br>Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-3"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)<br />stepDefinitions.DemoApp.clickOnNumber(DemoApp.java:41)<br />✽.Click on "5" number(file:///C:/Users/hi.panchal/IdeaProjects/mobile_automation/src/test/resources/features/feature.feature:7)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                             </table>
                         </td>
                     </tr>
-            <tr class="test-SUCCESS">
+            <tr class="test-ERROR">
                     <td colspan="2"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>35.34s</em></span></td>
+                <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
+                <td width="100"><span class="top-level-step"><em>40.58s</em></span></td>
             </tr>
 
         </table>

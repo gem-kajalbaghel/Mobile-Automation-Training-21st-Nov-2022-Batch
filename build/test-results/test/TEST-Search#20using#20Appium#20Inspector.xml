@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Search using Appium Inspector" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-28T09:36:37" hostname="GEMGN-200030" time="35.692">
+<testsuite name="Search using Appium Inspector" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-29T11:10:08" hostname="GEMGN-200030" time="35.537">
   <properties/>
-  <testcase name="check launch of demo application" classname="Search using Appium Inspector" time="35.692"/>
+  <testcase name="Tackle alert box" classname="Search using Appium Inspector" time="35.537"/>
   <system-out><![CDATA[Launching calculator app
+Successfully clicked on App button.
+User is unable to click on Alert Dialogs button.
+User is unable to click on OK Cancel dialog with a message button.
+AppiumBy.id: android:id/button1
+User is unable to click on OK button.
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hi.panchal/IdeaProjects/mobile_automation/src/test/resources/features/feature.feature
 [Test worker] INFO  - 
@@ -11,7 +16,7 @@
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
    |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-check launch of demo application(search-using-appium-inspector;check-launch-of-demo-application)
+Tackle alert box(search-using-appium-inspector;tackle-alert-box)
 --------------------------------------------------------------------------------
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
@@ -19,7 +24,7 @@ check launch of demo application(search-using-appium-inspector;check-launch-of-d
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
    |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
-check launch of demo application
+Tackle alert box
 ----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
