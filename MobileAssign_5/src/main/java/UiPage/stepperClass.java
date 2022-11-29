@@ -117,9 +117,14 @@ public class stepperClass extends PageObject {
           List<WebElement> elems= driver.findElements(Locators.listOfELems);
 
 
-          for(WebElement elem:elems)
+           for(WebElement elem:elems)
           {
-              System.out.println(elem.getText());
+              if(elem.getText().equals("Search"))
+              {
+                  clickOn(elem);
+                  break;
+              }
+
 
           }
     }
