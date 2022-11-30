@@ -8,3 +8,13 @@ Feature: Search using Appium Inspector
     Examples:
       | number |
       | 5      |
+
+  @Task2
+  Scenario: Check for Long Press
+    Given Launch the application
+    Then Check for long press
+
+  @Task3
+  Scenario: check for alert
+    Given Launch the application
+    Then Check for alert message
