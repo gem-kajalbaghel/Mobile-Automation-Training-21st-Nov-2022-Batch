@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Alert&amp;LongPress_Assignment" skipped="0" tests="2" time="44.01" timestamp="2022-11-29 04:51:20"><testcase name="Long Press"/><testcase name="Alerts"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [844e04c2-8efb-457f-ac50-87517e741fcb, findElement {using=id, value=android:id/button1}]&#10;Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, deviceName: Pixel6, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 844e04c2-8efb-457f-ac50-87517e741fcb&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [844e04c2-8efb-457f-ac50-87517e741fcb, findElement {using=id, value=android:id/button1}]
+Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, deviceName: Pixel6, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 844e04c2-8efb-457f-ac50-87517e741fcb
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: driver.version: unknown</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [844e04c2-8efb-457f-ac50-87517e741fcb, findElement {using=id, value=android:id/button1}]
+Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, deviceName: Pixel6, platformName: android, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 844e04c2-8efb-457f-ac50-87517e741fcb
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: driver.version: unknown&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)&#13;
+UI.alerts_longpress.AcceptAlert(alerts_longpress.java:38)&#13;
+Steps.step.alert(step.java:15)&#13;
+StepD.stepd.alert(stepd.java:18)&#13;
+✽.Alert handling(file:///C:/Users/DIPANSHU%20KAPOOR/IdeaProjects/MobileAutomationA4/src/test/resources/Features/longpress_alert.feature:10)&#13;
+</system-err></testcase></testsuite>
