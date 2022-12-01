@@ -20,9 +20,16 @@ public class Locators {
     }
 
     public static By alertOkButton = AppiumBy.id("android:id/button1");
-    public static By accessibilityId(String btn){
-        return AppiumBy.accessibilityId('"'+btn+'"');
-    }
-public static By personName = AppiumBy.id("//android.widget.TextView[1]");
 
+    public static By accessibilityId(String btn) {
+        return AppiumBy.accessibilityId('"' + btn + '"');
+    }
+
+    public static By personName = AppiumBy.id("//android.widget.TextView[1]");
+
+    public static By scroll(String scroll) {
+        return AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView" + "(text(\"" + scroll + "\\\"));");
+    }
+
+    public static By swipe = AppiumBy.xpath("//android.widget.ImageView[1]");
 }

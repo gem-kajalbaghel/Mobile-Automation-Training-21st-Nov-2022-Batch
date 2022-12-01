@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -9,6 +10,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -21,6 +23,7 @@ import java.time.Duration;
 import net.serenitybdd.core.pages.ListOfWebElementFacades;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.remote.RemoteWebElement;
 
 public class DemoApp extends PageObject {
     boolean isPassed = false;
@@ -138,11 +141,11 @@ public class DemoApp extends PageObject {
             LongPressOptions longPressOptions = new LongPressOptions();
             WebElement ele = driver.findElement(Locators.personName);
             longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(ele));
-            TouchAction action = new TouchAction<>((PerformsTouchActions)driver);
+            TouchAction action = new TouchAction<>((PerformsTouchActions) driver);
             action.longPress(longPressOptions).release().perform();
 
             Thread.sleep(2000);
-            isPassed=true;
+            isPassed = true;
         } catch (Exception ex) {
             isPassed = false;
         }
@@ -150,5 +153,48 @@ public class DemoApp extends PageObject {
             System.out.println("Successfully longpressed");
         else
             System.out.println("User is unable to longpress");
+    }
+
+
+    //Assignment6
+    @Then("Check scroll functionality {string}, {string}")
+    public void checkScrollFunctionality(String text, String scroll) {
+        isPassed = false;
+        try {
+            Thread.sleep(2000);
+
+            driver.findElement(Locators.accessibilityId(text)).click();
+            driver.findElement(Locators.scroll(scroll));
+            isPassed = true;
+        } catch (Exception ex) {
+            isPassed = false;
+        }
+        if (isPassed)
+            System.out.println("Successfully scrolled");
+        else
+            System.out.println("User is unable to scroll");
+    }
+
+    @And("Swipe through images")
+    public void swipeThroughImages() {
+        isPassed = false;
+        try {
+            Thread.sleep(2000);
+
+            WebElement img = driver.findElement(Locators.swipe);
+
+            ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+                    "elementId", ((RemoteWebElement) img).getId(),
+                    "direction", "left",
+                    "percent", "0.80"
+            ));
+            isPassed = true;
+        } catch (Exception ex) {
+            isPassed = false;
+        }
+        if (isPassed)
+            System.out.println("Successfully swiped");
+        else
+            System.out.println("User is unable to swipe");
     }
 }
