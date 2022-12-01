@@ -20,4 +20,9 @@ public class Locators {
     }
 
     public static By alertOkButton = AppiumBy.id("android:id/button1");
+    public static By accessibilityId(String btn){
+        return AppiumBy.accessibilityId('"'+btn+'"');
+    }
+public static By personName = AppiumBy.id("//android.widget.TextView[1]");
+
 }

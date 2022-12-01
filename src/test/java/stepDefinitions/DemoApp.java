@@ -1,16 +1,22 @@
 package stepDefinitions;
 
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import loc.Locators;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 import net.serenitybdd.core.pages.ListOfWebElementFacades;
 import net.serenitybdd.core.pages.PageObject;
@@ -101,5 +107,48 @@ public class DemoApp extends PageObject {
             System.out.println("Successfully clicked on " + btn + " button.");
         else
             System.out.println("User is unable to click on " + btn + " button.");
+    }
+
+    @Then("Click on {string} button.")
+    public void clickOnBtn(String btn) {
+        isPassed = false;
+        try {
+            Thread.sleep(2000);
+
+            if (driver.findElement(Locators.accessibilityId(btn)).isDisplayed()) {
+                driver.findElement(Locators.accessibilityId(btn)).click();
+                isPassed = true;
+            }
+        } catch (Exception ex) {
+            isPassed = false;
+        }
+        if (isPassed)
+            System.out.println("Successfully clicked on " + btn + " button.");
+        else
+            System.out.println("User is unable to click on " + btn + " button.");
+
+    }
+
+    @And("Longpress names")
+    public void longpressNames() {
+        isPassed = false;
+        try {
+            Thread.sleep(2000);
+
+            LongPressOptions longPressOptions = new LongPressOptions();
+            WebElement ele = driver.findElement(Locators.personName);
+            longPressOptions.withDuration(Duration.ofSeconds(3)).withElement(ElementOption.element(ele));
+            TouchAction action = new TouchAction<>((PerformsTouchActions)driver);
+            action.longPress(longPressOptions).release().perform();
+
+            Thread.sleep(2000);
+            isPassed=true;
+        } catch (Exception ex) {
+            isPassed = false;
+        }
+        if (isPassed)
+            System.out.println("Successfully longpressed");
+        else
+            System.out.println("User is unable to longpress");
     }
 }

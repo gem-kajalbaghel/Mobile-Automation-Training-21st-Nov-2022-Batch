@@ -9,7 +9,7 @@ Feature: Search using Appium Inspector
       | num |
       | 5   |
 
-  @Assignment5
+  @Assignment5A
   Scenario Outline: Tackle alert box
     Given Launch the application
     Then Click on "<btn>" button
@@ -19,3 +19,16 @@ Feature: Search using Appium Inspector
     Examples:
       | btn | btn2          | btn3                            |
       | App | Alert Dialogs | OK Cancel dialog with a message |
+
+    @Assignment5B
+    Scenario Outline: Tackle long press functionality
+      Given Launch the application
+      Then Click on "<views>" button.
+      And Click on "<expandableList>" button
+      Then Click on "<customAdapter>" button.
+      And Longpress names
+      Examples:
+        | views | expandableList | customAdapter|
+      |     Views  |Expandable Lists| 1. Custom Adapter|
+
+
