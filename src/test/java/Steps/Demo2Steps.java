@@ -1,10 +1,14 @@
 package Steps;
 
 import UiPage.Demo2;
+import UiPage.Locators;
+import io.cucumber.java.en.Then;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;
 //import net.thucydides.core.pages.PageObject;
 import java.net.MalformedURLException;
+import UiPage.Locators;
+import org.openqa.selenium.By;
 
 public class Demo2Steps extends PageObject {
     Demo2 genf;
@@ -41,8 +45,22 @@ public void wifiCheckBox() throws InterruptedException {
     @Step("click on views")
     public void views() throws InterruptedException {
         Thread.sleep(2000);
-genf.clickView();
+    genf.clickView();
     }
+
+    @Step("Click on Gallery")
+    public void Gallery() throws InterruptedException {
+        Thread.sleep(2000);
+        genf.clickGallery();
+    }
+
+    @Step("Click on Photos")
+    public void Photos() throws InterruptedException {
+        Thread.sleep(2000);
+        genf.clickPhotos();
+    }
+
+
 
     @Step("click on Expandable option")
     public void expan()
@@ -67,6 +85,31 @@ genf.clickView();
     genf.alert();
 }
 
+@Step("Swipe handling")
+public void swipes() throws InterruptedException {
+    genf.swipe();
+}
+
+
+@Step("Dropdown handling")
+    public void drpdwn() throws InterruptedException {
+    genf.dropDown();
+}
+
+@Step("^Scroll handling step$")
+    public void scrol() throws InterruptedException {
+    genf.scrollfunc();
+}
+
+@Step("^toast Message$")
+    public void toast() throws InterruptedException {
+    genf.toastMessage();
+}
+@Step("Drg and drop")
+public void dragDrop() throws InterruptedException {
+genf.dragDropsbtn();
+    genf.drop();
+    }
 
 
 

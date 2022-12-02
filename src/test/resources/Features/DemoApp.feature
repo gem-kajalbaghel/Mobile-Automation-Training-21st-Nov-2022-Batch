@@ -1,4 +1,3 @@
-
 Feature: Search using Emulator
 
   Background:
@@ -15,5 +14,29 @@ Feature: Search using Emulator
     Scenario: Perform alert accept/reject
       Then Navigate to alert and cancel the alert
 
+  @test14
+      Scenario: Perform swipe function
+        When click on views
+        Then click on Gallery
+        Then click on Photos
+      And Swipe the element
+
+  @test4
+  Scenario: Perform dropdown function
+    When click on views
+    And dropdown to element
+  @test4
+  Scenario: Perform Scroll function
+    When click on views
+    And scroll function
+
+  @test41
+  Scenario: Check the toast text
+    When click on views
+    Then check toast message
 
 
+  @test412
+  Scenario: Check the toast text
+    When click on views
+    Then click on drag drop btn

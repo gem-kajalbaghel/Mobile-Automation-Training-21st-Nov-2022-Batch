@@ -1,6 +1,7 @@
 package UiPage;
 
 import io.appium.java_client.AppiumBy;
+import org.apache.commons.compress.harmony.pack200.PackingUtils;
 import org.openqa.selenium.By;
 
 public class Locators
@@ -23,11 +24,21 @@ public static By views = AppiumBy.accessibilityId("Views");
 public static By expandableLists =AppiumBy.accessibilityId("Expandable Lists");
 
     public static By customAdaptor =AppiumBy.accessibilityId("1. Custom Adapter");
-
     public static By peopleName = AppiumBy.xpath("//android.widget.TextView[@text='People Names']");
-
     public static By app_option=AppiumBy.accessibilityId("App");
     public static By alert_dialogs =AppiumBy.accessibilityId("Alert Dialogs");
     public static By okCancel_alert=AppiumBy.accessibilityId("OK Cancel dialog with a message");
     public static By cancel =AppiumBy.id("android:id/button2");
+    public static By gallery=AppiumBy.xpath("//android.widget.TextView[@content-desc='Gallery']");
+    public static By photos=AppiumBy.accessibilityId("1. Photos");
+    public static By popMenu=AppiumBy.accessibilityId("Popup Menu");
+    public static By makePop=AppiumBy.accessibilityId("Make a Popup!");
+    public static By search=AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView");
+
+
+    public static By dragAndDrop= AppiumBy.accessibilityId("Drag and Drop");
+    public static By src= AppiumBy.id("io.appium.android.apis:id/drag_dot_1");
+
+    public static By drop =AppiumBy.id("io.appium.android.apis:id/drag_result_text");
+
 }

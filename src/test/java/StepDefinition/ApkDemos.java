@@ -1,9 +1,11 @@
 package StepDefinition;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en_scouse.An;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -65,12 +67,39 @@ run.longpress();
     public void alert() throws InterruptedException {
         run.alert();
     }
+    @Then("^click on Gallery$")
+    public void gallery() throws InterruptedException {
+        run.Gallery();
+        System.out.println("End");
+    }
 
+    @Then("^click on Photos$")
+    public void photo() throws InterruptedException {
+        run.Photos();
+    }
 
-//@Then("^click on Launching preference$")
-//public void launchingPreference()
-//{
-//
-//}
+    @And("Swipe the element")
+    public void swipess() throws InterruptedException {
+        run.swipes();
+    }
+    @And("^dropdown to element$")
+    public void drp() throws InterruptedException {
+        run.drpdwn();
+    }
+
+    @And("^scroll function$")
+    public void scrolls() throws InterruptedException {
+        run.scrol();
+    }
+
+@Then("^check toast message$")
+public void launchingPreference() throws InterruptedException {
+run.toast();
+}
+
+@Then("^click on drag drop btn$")
+    public void dragDropps() throws InterruptedException {
+    run.dragDrop();
+}
 
 }
