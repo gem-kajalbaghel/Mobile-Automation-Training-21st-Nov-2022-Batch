@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Open Application" skipped="0" tests="1" time="26.2" timestamp="2022-12-09 04:44:47"><testcase name="check launch of application using Serenity Bdd"><error message="The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource&#10;Build info: version: '4.5.0', revision: 'fe167b119a'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [c2ee1ff0-faed-45c8-8287-80982acccfab, getTitle {}]&#10;Capabilities {appium:app: C:\projects\MobileAutomatio..., appium:appPackage: com.androidsample.generalstore, appium:autoAcceptAlerts: true, appium:autoGrantPermissions: true, appium:databaseEnabled: false, appium:desired: {app: C:\projects\MobileAutomatio..., autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Device_2, platformName: android, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: c2ee1ff0-faed-45c8-8287-80982acccfab" type="org.openqa.selenium.UnsupportedCommandException">The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c2ee1ff0-faed-45c8-8287-80982acccfab, getTitle {}]
+Capabilities {appium:app: C:\projects\MobileAutomatio..., appium:appPackage: com.androidsample.generalstore, appium:autoAcceptAlerts: true, appium:autoGrantPermissions: true, appium:databaseEnabled: false, appium:desired: {app: C:\projects\MobileAutomatio..., autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Device_2, platformName: android, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c2ee1ff0-faed-45c8-8287-80982acccfab</error><system-err>The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c2ee1ff0-faed-45c8-8287-80982acccfab, getTitle {}]
+Capabilities {appium:app: C:\projects\MobileAutomatio..., appium:appPackage: com.androidsample.generalstore, appium:autoAcceptAlerts: true, appium:autoGrantPermissions: true, appium:databaseEnabled: false, appium:desired: {app: C:\projects\MobileAutomatio..., autoAcceptAlerts: true, autoGrantPermissions: true, deviceName: Device_2, platformName: android, platformVersion: 13.0}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c2ee1ff0-faed-45c8-8287-80982acccfab&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)&#13;
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:272)&#13;
+com.gemini.generic.MobileAction.getTitle(MobileAction.java:749)&#13;
+com.gemini.generic.UiPage.Demo2.validateLogin(Demo2.java:257)&#13;
+com.gemini.generic.Steps.Demo2Steps.namess(Demo2Steps.java:113)&#13;
+com.gemini.generic.StepDefinition.ApkDemos.nam(ApkDemos.java:125)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+</system-err></testcase></testsuite>

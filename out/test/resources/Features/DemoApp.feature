@@ -3,6 +3,9 @@ Feature: Search using Emulator
   Background:
   Given Launch application
 
+    Scenario: prefernce
+      When click on preference option
+
   @test1234
   Scenario: Perform Long press function
     When click on views
@@ -19,10 +22,10 @@ Feature: Search using Emulator
         When click on views
         Then click on Gallery
         Then click on Photos
-      And Swipe the element
+        And Swipe the element
 
   @test4
-  Scenario: Perform dropdown function
+    Scenario: Perform dropdown function
     When click on views
     And dropdown to element
   @test4
@@ -37,6 +40,13 @@ Feature: Search using Emulator
 
 
   @test412
-  Scenario: Check the toast text
+  Scenario: Check drag and drop
     When click on views
     Then click on drag drop btn
+
+
+
+
+
+
+
