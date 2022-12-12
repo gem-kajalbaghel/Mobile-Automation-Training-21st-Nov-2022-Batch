@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Assisnment5_6" skipped="0" tests="1" time="21.86" timestamp="2022-12-06 04:30:47"><testcase name="Perform swipe function"><error message="java.lang.IllegalArgumentException: The swipe area coordinates must be provided if element is not set&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [dd290403-d545-4b80-be73-bfe3b83303f0, executeScript {script=mobile: swipeGesture, args=[{percent=1.0, Id=00000000-0000-0186-ffff-ffff00000047, direction=left}]}]&#10;Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, devicenname: Android Emulator, platformName: android, platformVersion: 13.0, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:devicenname: Android Emulator, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: dd290403-d545-4b80-be73-bfe3b83303f0" type="org.openqa.selenium.InvalidArgumentException">java.lang.IllegalArgumentException: The swipe area coordinates must be provided if element is not set
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [dd290403-d545-4b80-be73-bfe3b83303f0, executeScript {script=mobile: swipeGesture, args=[{percent=1.0, Id=00000000-0000-0186-ffff-ffff00000047, direction=left}]}]
+Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, devicenname: Android Emulator, platformName: android, platformVersion: 13.0, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:devicenname: Android Emulator, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: dd290403-d545-4b80-be73-bfe3b83303f0</error><system-err>java.lang.IllegalArgumentException: The swipe area coordinates must be provided if element is not set
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_352'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [dd290403-d545-4b80-be73-bfe3b83303f0, executeScript {script=mobile: swipeGesture, args=[{percent=1.0, Id=00000000-0000-0186-ffff-ffff00000047, direction=left}]}]
+Capabilities {appium:app: D:\ApiDemos-debug.apk, appium:appPackage: io.appium.android.apis, appium:databaseEnabled: false, appium:desired: {app: D:\ApiDemos-debug.apk, devicenname: Android Emulator, platformName: android, platformVersion: 13.0, udid: emulator-5554}, appium:deviceApiLevel: 29, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:devicenname: Android Emulator, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 10, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2211, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: dd290403-d545-4b80-be73-bfe3b83303f0&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)&#13;
+UI.Scroll_Swipe.swipe(Scroll_Swipe.java:52)&#13;
+Steps.step.swipes(step.java:15)&#13;
+StepDefinitions.stepD.swipe(stepD.java:39)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)&#13;
+io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)&#13;
+io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:84)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+</system-err></testcase></testsuite>
