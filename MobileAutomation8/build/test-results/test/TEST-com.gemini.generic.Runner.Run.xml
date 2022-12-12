@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gemini.generic.Runner.Run" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="KAPOOR" time="0.0">
+  <properties/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Dec 09, 2022 4:11:59 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier get
+WARNING: No features found at file:/C:/Users/DIPANSHU%20KAPOOR/IdeaProjects/MobileAutomation7/src/test/resources/Features/
+]]></system-err>
+</testsuite>
