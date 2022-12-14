@@ -1,27 +1,31 @@
 package com.gemini.generic.UiPage;
 
 import com.gemini.generic.MobileAction;
+import com.gemini.generic.MobileDriverManager;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.LongPressOptions;
 import io.appium.java_client.touch.offset.ElementOption;
+import io.cucumber.java.en.Then;
 import net.serenitybdd.core.pages.PageObject;
 
 import net.thucydides.core.annotations.Managed;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 public class Demo2 extends PageObject
 {
@@ -235,11 +239,6 @@ public void drop()
     }
 }
 
-//    public void name() throws InterruptedException {
-//        Thread.sleep(2000);
-//        MobileAction.click(Locators.name);
-//        MobileAction.typeText(Locators.name,"Tushar");
-//    }
 
     public void login() {
         MobileAction.typeText(Locators.name, "ABC", "Enter Username");
@@ -252,31 +251,79 @@ public void drop()
         MobileAction.click(Locators.btnLogin, "Click Submit");
     }
 
-    public void validateLogin()
+
+    public void openJordanRetro()
     {
-        if(MobileAction.getTitle().equalsIgnoreCase("Products"))
-            System.out.println("login Success");
-        else
-            System.out.println("login Fail");
+            waitABit(2000);
+            MobileAction.click(Locators.airJordan,"ADD TO CART");
     }
-
-    public void openJordanRetro() {
-        MobileAction.scrollToElement("Air Jordan 4 Retro", true);
-    }
-    public void Add_item_to_cart(){
-        MobileAction.click(Locators.productsAddtoCart,"Add airjordan 4 to cart");
+    public void Add_item_to_cart()
+    {
         MobileAction.waitSec(2);
-        MobileAction.click(Locators.btnCart,"Open Cart");
+        MobileAction.click(Locators.btnCart);
         MobileAction.waitSec(2);
     }
 
-    public void Validate_itemInCart(){
-        if(MobileAction.getElementText(Locators.productCart).contains("Air"))
-            System.out.println("Item successfully added to cart");
-        else
-            System.out.println("Failed to add to cart");
+
+    public void checkLoco()
+    {
+        MobileAction.click(Locators.checkBox);
     }
-    public void website(){
-        MobileAction.click(Locators.website,"Visit website");
+    public void websites()
+    {
+    MobileAction.click(Locators.website);
     }
+    public void loginSerenity()
+    {
+        typeInto(MobileAction.getElement(Locators.name),"ABC");
+        waitABit(2000);
+        clickOn(MobileAction.getElement(Locators.btnLogin));
+    }
+    public void openJordenShoes()
+    {
+        clickOn(MobileAction.getElement(Locators.airJordan));
+        waitABit(2000);
+       clickOn(MobileAction.getElement(Locators.btnCart));
+       waitABit(2000);
+    }
+
+
+    public void checkAndSubmit()
+    {
+        clickOn(MobileAction.getElement(Locators.checkBox));
+        clickOn(MobileAction.getElement(Locators.website));
+    }
+
+    public void visit() {
+
+        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+
+        desiredCapabilities.setCapability("chromedriverExecutable","C:\\projects\\MobileAutomationSeries\\driver\\chromedriver.exe");
+
+        MobileAction.waitSec(2);
+        MobileAction.click(Locators.websiteName);
+
+
+        Set<String> contexts = ((AndroidDriver) MobileDriverManager.getAppiumDriver()).getContextHandles();
+        ((AndroidDriver) MobileDriverManager.getAppiumDriver()).context("WEBVIEW_com.androidsample.generalstore");
+        MobileAction.typeText(Locators.googleSearch, "GeminiSolutions");
+        MobileDriverManager.getAppiumDriver().findElement(Locators.googleSearch).sendKeys(Keys.ENTER);
+
+        MobileAction.waitSec(2);
+        MobileAction.click(Locators.link);
+        MobileAction.navigateBack(false);
+        MobileAction.waitSec(2);
+        MobileAction.navigateForward(false);
+        MobileAction.waitSec(2);
+
+        MobileAction.navigateToUrl("https://www.youtube.com/", false);
+        MobileAction.refresh(false);
+        MobileAction.waitSec(2);
+
+
+    }
+
+
+
+
 }

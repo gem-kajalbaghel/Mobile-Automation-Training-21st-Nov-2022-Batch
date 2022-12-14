@@ -108,15 +108,6 @@ run.toast();
 @Given("Launch general store application")
 public void openApp() throws InterruptedException, MalformedURLException {
 
-//    Thread.sleep(2000);
-//    DesiredCapabilities cap = new DesiredCapabilities();
-//    cap.setCapability("deviceName", "Pixel3");
-//    cap.setCapability("udid", "emulator-5554");
-//    cap.setCapability("platformName", "Android");
-//    cap.setCapability("app","C:\\projects\\MobileAutomationSeries\\app\\General-Store.apk");
-//    driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-//    System.out.println("Launched application");
-
     System.out.println("application has opened"+ MobileDriverManager.getAppiumDriver());
 }
 
@@ -131,6 +122,42 @@ public void nam() throws InterruptedException {
     run.jordans();
 }
 
+@Then("Click on added to cart")
+    public void jordanCart()
+{
+    run.cart();
+}
 
+@Then("^Click on checkbox$")
+    public void checks(){
+        run.check();
+}
+
+@And("^click on submit btn$")
+    public void submit()
+{
+    run.submitBtn();
+}
+
+@When("^Login using serenity functions$")
+    public void login()
+{
+    run.loginSerenitys();
+}
+@Then("^click on jordan shoes using serenity functions and add to cart$")
+    public void shoes()
+{
+    run.select();
+}
+@Then("^click on check box and submit btn$")
+    public void checkSubmit()
+{
+    run.checksss();
+}
+@Then("Visit the website")
+    public void web()
+{
+    run.websit();
+}
 
 }

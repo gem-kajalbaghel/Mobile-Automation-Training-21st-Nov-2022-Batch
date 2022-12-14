@@ -1,6 +1,7 @@
 package com.gemini.generic.Steps;
 
 import com.gemini.generic.UiPage.Demo2;
+import io.cucumber.java.pa.ਜਦੋਂ;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.Step;
 //import net.thucydides.core.pages.PageObject;
@@ -110,12 +111,50 @@ genf.dragDropsbtn();
 @Step("Enter Name")
 public void namess() throws InterruptedException {
     genf.login();
-genf.validateLogin();
+//genf.validateLogin();
     }
-@Step("Jordan")
+@Step("Add Jordan to cart")
     public void jordans()
 {
     genf.openJordanRetro();
 }
+
+@Step("added to Cart")
+    public void cart()
+    {
+        genf.Add_item_to_cart();
+    }
+
+    @Step("Check box")
+    public void check(){
+        genf.checkLoco();
+    }
+    @Step("submit btn")
+    public void submitBtn()
+    {
+        genf.websites();
+    }
+
+    @Step("Visit the website")
+    public void websit()
+    {
+        genf.visit();
+    }
+
+    @Step("Login window")
+    public void loginSerenitys()
+    {
+        genf.loginSerenity();
+    }
+    @Step("Select shoes and add to cart")
+    public void select()
+    {
+        genf.openJordenShoes();
+    }
+    @Step("click on checkbox and then submit")
+    public void checksss()
+    {
+        genf.checkAndSubmit();
+    }
 
 }

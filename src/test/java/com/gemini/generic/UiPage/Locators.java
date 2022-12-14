@@ -51,6 +51,17 @@ public static By expandableLists =AppiumBy.accessibilityId("Expandable Lists");
         public static By productCart=  AppiumBy.id("com.androidsample.generalstore:id/productName");
         public static By productsAddtoCart= AppiumBy.id("com.androidsample.generalstore:id/productAddCart");
         public static By btnCart =AppiumBy.id("com.androidsample.generalstore:id/appbar_btn_cart");
-        public static By website=AppiumBy.id("com.androidsample.generalstore:id/btnProceed");
 
-    }
+        public static By checkBox=AppiumBy.xpath("//android.widget.CheckBox");
+        public static By website=AppiumBy.xpath("//android.widget.Button[text(),'Visit to the website to complete purchase']");
+
+//    com.androidsample.generalstore:id/toolbar_title
+
+        public static By airJordan=AppiumBy.xpath("(//android.widget.LinearLayout//android.widget.TextView[@resource-id='com.androidsample.generalstore:id/productAddCart'])[2]");
+
+
+    public static By websiteName=AppiumBy.id("com.androidsample.generalstore:id/btnProceed");
+    public static By link= By.xpath("(//*[@class='q8U8x MBeuO ynAwRc oewGkc LeUQr'])[1]");
+    public static By googleSearch =By.name("q");
+
+}
