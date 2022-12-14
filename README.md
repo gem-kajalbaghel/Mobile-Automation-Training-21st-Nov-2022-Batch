@@ -2,7 +2,7 @@
 # Mobile-Automation-Training-21st-Nov-2022-Batch
 
 ### Shubham Kumar
-[**GitHub**](https://github.com/gem-shubhamkumar/?target=_blank) | [**Testing Blog**](https://testingwithsk.in/?target=_blank)
+[**GitHub**](https://github.com/gem-shubhamkumar) | [**Testing Blog**](https://testingwithsk.in)
 
 #### Assignment 1 - Set Up and Installation of Appium
 
